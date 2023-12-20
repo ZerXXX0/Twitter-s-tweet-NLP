@@ -16,7 +16,7 @@ textToPredict = st.text_area("input text","enter your input")
 
 # Button to predict sentiment
 if st.button("Predict Sentiment"):
-    result_NB, result_SVM, accuracy_NB, accuracy_SVM = predict_word(textToPredict)
+    result_nb, result_svm, acuracy_nb, acuracy_svm = predict_word(textToPredict)
     # Display the predictions
-    st.write(f"Predicted Sentiment (Naive Bayes) - {accuracy_NB} : {result_NB}")
-    st.write(f"Predicted Sentiment (Linear SVM) - {accuracy_SVM} : {result_SVM}")
+    st.write(f"Predicted Sentiment (Naive Bayes) - {acuracy_nb} : {result_nb}")
+    st.write(f"Predicted Sentiment (Linear SVM) - {acuracy_svm} : {result_svm}")
