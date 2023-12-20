@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title("title")
-st.text("yo")
+st.text("yo man")
 
 name = st.text_input("name","joe mama",key="input1")
 nim = st.text_input("NIM","1234567890",key="input2")
